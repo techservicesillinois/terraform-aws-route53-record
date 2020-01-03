@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: hashicorp/terraform:0.11.14
+    image: hashicorp/terraform
     commands:
       - apk add make
       - make tfc
