@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:0.11.14
+FROM hashicorp/terraform
 
 RUN apk add make
 

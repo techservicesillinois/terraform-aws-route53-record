@@ -18,7 +18,7 @@ variable "ttl" {
 
 variable "records" {
   description = "A string list of records."
-  type        = "list"
+  type        = list(string)
 }
 
 variable "health_check_id" {
