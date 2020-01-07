@@ -15,5 +15,15 @@ resource "aws_route53_record" "default" {
     }
   }
 
+  dynamic "geolocation_routing_policy" {
+    for_each = toset(var.geolocation_routing_policy != null ? [var.geolocation_routing_policy] : [])
+
+    content {
+      continent   = lookup(geolocation_routing_policy.value, "continent", null)
+      country     = lookup(geolocation_routing_policy.value, "country", null)
+      subdivision = lookup(geolocation_routing_policy.value, "subdivision", null)
+    }
+  }
+
   records = var.records
 }

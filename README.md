@@ -85,8 +85,6 @@ Limitations
 
 * Does not support the following blocks:
 
-    * failover_routing_policy
-    * geolocation_routing_policy
     * latency_routing_policy
     * weighted_routing_policy
 
