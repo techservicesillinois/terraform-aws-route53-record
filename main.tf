@@ -25,5 +25,14 @@ resource "aws_route53_record" "default" {
     }
   }
 
+  dynamic "latency_routing_policy" {
+    for_each = toset(var.latency_routing_policy != null ? [var.latency_routing_policy] : [])
+
+    content {
+      region = latency_routing_policy.value["region"]
+    }
+  }
+
+
   records = var.records
 }

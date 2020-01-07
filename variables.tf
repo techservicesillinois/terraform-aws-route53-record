@@ -44,3 +44,9 @@ variable "geolocation_routing_policy" {
   type        = map(any)
   default     = null
 }
+
+variable "latency_routing_policy" {
+  description = "A block indicating a routing policy based on the latency between the requestor and an AWS region."
+  type        = map(any)
+  default     = null
+}
