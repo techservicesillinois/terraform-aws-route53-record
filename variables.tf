@@ -38,3 +38,9 @@ variable "failover_routing_policy" {
   type        = map(any)
   default     = null
 }
+
+variable "geolocation_routing_policy" {
+  description = "A block indicating a routing policy based on the geolocation of the requestor. Conflicts with any other routing policy."
+  type        = map(any)
+  default     = null
+}
