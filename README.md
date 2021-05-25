@@ -1,6 +1,6 @@
 # route53-record
 
-[![Build Status](https://drone.techservices.illinois.edu/api/badges/techservicesillinois/terraform-aws-route53-record/status.svg)](https://drone.techservices.illinois.edu/techservicesillinois/terraform-aws-route53-record)
+[![Terraform actions status](https://github.com/techservicesillinois/terraform-aws-route53-record/workflows/terraform/badge.svg)](https://github.com/techservicesillinois/terraform-aws-route53-record/actions)
 
 Provides a Route53 [record](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ResourceRecordTypes.html) resource.
 
