@@ -3,22 +3,22 @@ include {
 }
 
 terraform {
-  source = "git@github.com:techservicesillinois/terraform-aws-route53-record?ref=v1.0.0"
+  source = "git@github.com:techservicesillinois/terraform-aws-route53-record"
 }
 
 inputs = {
   hostname = "test"
-  domain = "courses.illinois.edu"
-  type   = "A"
-  ttl    = 5
+  domain   = "courses.illinois.edu"
+  type     = "A"
+  ttl      = 5
 
   set_identifier = "geolocation"
 
   geolocation_routing_policy = {
-    continent = "NA"  # North America
+    continent = "NA" # North America
   }
 
   records = [
-      "192.168.1.128",
+    "192.168.1.128",
   ]
 }

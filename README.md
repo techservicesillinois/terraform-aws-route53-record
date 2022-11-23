@@ -85,7 +85,6 @@ Limitations
 
 * Does not support the following blocks:
 
-    * latency_routing_policy
     * weighted_routing_policy
 
 * Does not support the following arguments:
