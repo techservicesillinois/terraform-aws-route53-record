@@ -3,22 +3,22 @@ include {
 }
 
 terraform {
-  source = "git@github.com:techservicesillinois/terraform-aws-route53-record?ref=v3.0.0"
+  source = "git@github.com:techservicesillinois/terraform-aws-route53-record"
 }
 
 inputs = {
   hostname = "test"
-  domain = "courses.illinois.edu"
-  type   = "A"
-  ttl    = 5
+  domain   = "courses.illinois.edu"
+  type     = "A"
+  ttl      = 5
 
   set_identifier = "failover"
 
   failover_routing_policy = {
     type = "SECONDARY"
   }
-  
+
   records = [
-      "192.168.1.64",
+    "192.168.1.64",
   ]
 }
